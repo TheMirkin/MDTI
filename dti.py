@@ -1,4 +1,6 @@
-import os,sys,time
+import os
+import sys
+import time
 from colorama import Fore,Style
 from socket import gethostbyname
 from pyfiglet import figlet_format
@@ -27,6 +29,6 @@ def main():
                      print(Krmz+"=> "+site+" : "+Beyaz+ke_ip)
                      savefile = open(input_save, 'a').write(ke_ip+"\n")
            except:
-           	print(Yesil+"=> "+site+" : Error-Dont Use HTTP:// And HTTPS://")
+           	print(Yesil+"=> "+ site +" : Error-Dont Use HTTP:// And HTTPS://")
 
 main();print(Style.RESET_ALL);print("[!] Dosya Başarıyla Kaydedildi")
